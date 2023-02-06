@@ -36,21 +36,21 @@
 //     title: 'The Great Gatsby',
 //     pageCount: 345,
 //     genre: 'Tragedy',
-//     author: {name: 'F. Scott Fitzgerald', age: 67}
+//     author: [{name: 'F. Scott Fitzgerald', age: 67}]
 // };
 // let hamlet = {
 // title: 'Hamlet',
 // pageCount: 300,
 // genre: 'Tragedy',
-// author: {
+// author: [{
 // name: 'William Shakespeare',
-// age: 88}
+// age: 88}]
 // };
 // let theAdventuresOfHuckleberryFinn = {
 //     title: 'The Adventures of Huckleberry Finn',
 //     pageCount: 280,
 //     genre: 'Picaresque novel',
-//     author: {name: ' Mark Twain', age: 68}
+//     author: [{name: ' Mark Twain', age: 68}]
 // };
 
 
