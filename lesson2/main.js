@@ -36,14 +36,21 @@
 //     title: 'The Great Gatsby',
 //     pageCount: 345,
 //     genre: 'Tragedy',
-//     author: [{name: 'F. Scott Fitzgerald', age: 67}]
+//     author: {name: 'F. Scott Fitzgerald', age: 67}
 // };
-// let hamlet = {title: 'Hamlet', pageCount: 300, genre: 'Tragedy', author: [{name: 'William Shakespeare', age: 88}]};
+// let hamlet = {
+// title: 'Hamlet',
+// pageCount: 300,
+// genre: 'Tragedy',
+// author: {
+// name: 'William Shakespeare',
+// age: 88}
+// };
 // let theAdventuresOfHuckleberryFinn = {
 //     title: 'The Adventures of Huckleberry Finn',
 //     pageCount: 280,
 //     genre: 'Picaresque novel',
-//     author: [{name: ' Mark Twain', age: 68}]
+//     author: {name: ' Mark Twain', age: 68}
 // };
 
 
@@ -186,6 +193,22 @@
 //     - з файлу arrays.js (лежить в папці 2023 plan ) взяти масив coursesAndDurationArray. За допомоги іф перевірити
 //     кожен його елемент на тривалість навчання. У випадку якщо тривалість довша за 5 місяців вивести в консоль "Супер".
 
+// let coursesAndDurationArray = [
+//     {title: 'JavaScript Complex', monthDuration: 5},
+//     {title: 'Java Complex', monthDuration: 6},
+//     {title: 'Python Complex', monthDuration: 6},
+//     {title: 'QA Complex', monthDuration: 4},
+//     {title: 'FullStack', monthDuration: 7},
+//     {title: 'Frontend', monthDuration: 4}
+// ];
+// for (const course of coursesAndDurationArray) {
+//     if (course.monthDuration >= 5) {
+//         console.log(course.title, 'супер');
+//     } else {
+//         console.log(course.title, 'не супер')
+//     }
+// }
+
 let coursesAndDurationArray = [
     {title: 'JavaScript Complex', monthDuration: 5},
     {title: 'Java Complex', monthDuration: 6},
@@ -194,10 +217,11 @@ let coursesAndDurationArray = [
     {title: 'FullStack', monthDuration: 7},
     {title: 'Frontend', monthDuration: 4}
 ];
-for (const course of coursesAndDurationArray) {
-    if (course.monthDuration >= 5) {
-        console.log(course.title, 'супер');
+
+
+
+    if (coursesAndDurationArray[0].monthDuration >= 5) {
+        console.log(coursesAndDurationArray[0].title, 'супер');
     } else {
-        console.log(course.title, 'не супер')
+        console.log(coursesAndDurationArray[0].title, 'не супер')
     }
-}
