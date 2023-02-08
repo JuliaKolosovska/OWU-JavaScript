@@ -1,0 +1,17 @@
+.product-image {
+    width: 100px;
+}
+
+.product-title {
+    font-size: 20px;
+    color: blueviolet;
+}
+
+.product-card {
+    height: 200px;
+    width: 350px;
+    border: 2px solid silver;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

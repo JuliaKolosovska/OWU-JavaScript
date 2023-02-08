@@ -93,10 +93,16 @@
 // <img src="IMAGE" alt="" class="product-image">
 // </div>
 // Замість TITLE PRICE IMAGE - підставити відповідні поля з об'єкту
-//
-//
-//
-// --------------------
+
+// for (const product of products) {
+//     document.write(`<div class="product-card">
+//          <h3 class="product-title"> ${product.title}. Price- ${product.price}</h3>
+//          <img src="${product.image}" alt="${product.title}" class="product-image">
+//         </div>`)
+// }
+
+
+
 //     є масив
 // let users = [
 //     {name: 'vasya', age: 31, status: false},
@@ -113,5 +119,31 @@
 // ];
 // за допомоги циклу вивести:
 //     - користувачів зі статусом true
+
+// for (let i = 0; i < users.length; i++) {
+//     const user = users[i];
+//     if(user.status===true){
+//         document.write(`<div>${user.name}</div>`)
+//     }
+// }
+
+
 // - користувачів зі статусом false
+
+// i = 0;
+// while (i < users.length) {
+//     let user = users[i];
+//     if (!user.status) {
+//         document.write(`<div>${user.name}</div>`)
+//     }
+//     i++;
+// }
+
+
 // - користувачів які старші за 30 років
+
+// for (let i = 0; i < users.length; i++) {
+//     if (users[i].age > 30) {
+//         document.write(`<div>${users[i].name}</div>`)
+//     }
+// }
