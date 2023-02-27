@@ -190,6 +190,7 @@ let cinderellas = [
     new Cinderella('natalia', 22, 36),
 ]
 console.log(cinderellas);
+
 // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
 
 class Prince extends Cinderella {
@@ -198,7 +199,6 @@ class Prince extends Cinderella {
         this.findSize = findSize;
     }
 }
-
 
 
 //     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
@@ -212,15 +212,10 @@ let find = (cinderella, prince) => {
         }
     }
 }
-console.log(find(cinderellas,prince1));
+console.log(find(cinderellas, prince1));
 
 
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
 
 
-let find1=(arr, callback)=> {
-
-    arr.find(value => value.footSize === prince1.findSize);
-
-}
-console.log(find1(cinderellas));
+console.log(cinderellas.find(value => value.footSize === prince1.findSize));
