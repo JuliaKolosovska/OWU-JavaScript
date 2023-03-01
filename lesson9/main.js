@@ -215,42 +215,83 @@ let coursesArray = [
 // властивостей, для властивості modules зробити список з елементами
 // Приклад структири знаходиться у файлі example.png який лежить в папці з поточним фйлом
 
-for (const course of coursesArray) {
-    let container=document.createElement('div');
-    let title=document.createElement('div');
-    title.innerText=`Title: ${course.title}`;
-    let duration=document.createElement('div');
-    let monthDuration=document.createElement('div');
-    monthDuration.innerText= `monthDuration: ${course.monthDuration}`;
-    let hourDuration=document.createElement('div');
-    hourDuration.innerText= `hourDuration: ${course.hourDuration}`;
-    duration.append(monthDuration, hourDuration);
-    let modules=document.createElement('div');
+let container = document.createElement('div');
 
-    console.log(course);
-    let children = course.children;
+for (const course of coursesArray) {
+    let title = document.createElement('div');
+    title.style.fontSize = '30px';
+    title.innerText = `Title: ${course.title}`;
+    let duration = document.createElement('div');
+    let monthDuration = document.createElement('div');
+    monthDuration.innerText = `monthDuration: ${course.monthDuration}`;
+    monthDuration.style.marginRight = '10px';
+    let hourDuration = document.createElement('div');
+    hourDuration.innerText = `hourDuration: ${course.hourDuration}`;
+    duration.style.display = 'flex';
+    duration.append(monthDuration, hourDuration);
+    let modules = document.createElement('div');
+
+    let children = course.modules;
     if (children.length !== 0) {
         for (const element of children) {
-            let modulesUl=document.createElement('ul');
-                modules.appendChild(modulesUl);
-                let modulesLi=document.createElement('li');
-                modulesUl.appendChild(modulesLi);
-                let modulesDiv=document.createElement('div');
-                modulesDiv.innerText=`${element}`;
-                modulesLi.appendChild(modulesDiv);
-        };
+            let modulesUl = document.createElement('ul');
+            modules.appendChild(modulesUl);
+            let modulesLi = document.createElement('li');
+            modulesUl.appendChild(modulesLi);
+            let modulesDiv = document.createElement('div');
+            modulesDiv.innerText = `${element}`;
+            modulesLi.appendChild(modulesDiv);
+        }
 
-   container.append(title, duration, modules);
-    document.body.appendChild(container);
-}}
+        container.append(title, duration, modules);
+    }
+}
+
+document.body.appendChild(container);
+
 
 //     - Створити довільний елемент з id = text та створити кнопку.Використовуючи JavaScript, зробіть так, щоб при
 //     натисканні на кнопку зникав елемент з id="text".
-//
-//
+
+let textElement = document.createElement('h1');
+textElement.setAttribute('id', 'text');
+textElement.innerText = 'TextTextTextTextTextTextTextText';
+let btn = document.createElement('button');
+btn.innerText = 'HIDE';
+document.body.append(textElement, btn);
+btn.onclick = function () {
+    let blockHidden = textElement.style.visibility = 'hidden';
+    document.body.appendChild(blockHidden)
+}
+
+
+document.body.appendChild(document.createElement('br'))
+document.body.appendChild(document.createElement('br'))
+document.body.appendChild(document.createElement('br'))
+
 //     - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати
 //     інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
-//
+
+let caption= document.createElement('h4');
+caption.innerText='Enter Your age:';
+document.body.appendChild(caption);
+let input=document.createElement('input');
+input.setAttribute('type', 'number');
+
+let btnOk = document.createElement('button');
+btnOk.innerText = 'OK';
+
+document.body.append(input, btnOk);
+btnOk.onclick = () => {
+    let value = input.value;
+    if(value<18){
+        alert('Error: You must be over 18 years old!');
+    }else {
+        alert('You are welcome!');
+    }
+}
+
+
 // *** Створити 3 інпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додатковачастина для завдання)
