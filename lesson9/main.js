@@ -39,9 +39,9 @@ let coursesAndDurationArray = [
 // Для кожного елементу масиву зробити блок в якому вивести інформацію про title та monthDuration
 // Завдання робити через цикли.
 for (let i = 0; i < coursesAndDurationArray.length; i++) {
-    const coursesAndDurationArrayElement = coursesAndDurationArray[i];
+    const course = coursesAndDurationArray[i];
     let divBlock = document.createElement('div');
-    divBlock.innerText = `title: ${coursesAndDurationArray[i].title}; monthDuration: ${coursesAndDurationArray[i].monthDuration}`;
+    divBlock.innerText = `title: ${course.title}; monthDuration: ${course.monthDuration}`;
     document.body.appendChild(divBlock)
 }
 
@@ -65,15 +65,15 @@ let coursesAndDurationArray1 = [
 //     Завдання робити через цикли.
 
 for (let i = 0; i < coursesAndDurationArray1.length; i++) {
-    const coursesAndDurationArrayElement = coursesAndDurationArray1[i];
+    const course = coursesAndDurationArray1[i];
     let divBlock = document.createElement('div');
     divBlock.classList.add('item');
     let heading = document.createElement('h1');
     heading.classList.add('heading');
-    heading.innerText = `${coursesAndDurationArray1[i].title}`;
+    heading.innerText = `${course.title}`;
     let paragraph = document.createElement('p');
     paragraph.classList.add('description');
-    paragraph.innerText = `monthDuration: ${coursesAndDurationArray1[i].monthDuration}`
+    paragraph.innerText = `monthDuration: ${course.monthDuration}`
     divBlock.append(heading, paragraph);
     document.body.appendChild(divBlock)
 }
