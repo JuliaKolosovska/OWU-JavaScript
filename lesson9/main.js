@@ -332,9 +332,12 @@ btnPush.onclick=()=>{
             row.appendChild(cell);
         }
         tblBody.appendChild(row);
+        btnPush.style.visibility = 'hidden';
+
     }
 
     table.appendChild(tblBody);
     document.body.appendChild(table);
     table.setAttribute("border", "2");
+
 }
