@@ -140,12 +140,110 @@ for (const simpson of simpsons) {
 
 //     Цикл в циклі
 // - Є масив coursesArray котрий лежить в arrays.js (на цей момент ви вже знаєте де він знаходиться)
-//
+
+let coursesArray = [
+    {
+        title: 'JavaScript Complex',
+        monthDuration: 5,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
+    },
+    {
+        title: 'Java Complex',
+        monthDuration: 6,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'angular',
+            'aws',
+            'docker',
+            'git',
+            'java core',
+            'java advanced']
+    },
+    {
+        title: 'Python Complex',
+        monthDuration: 6,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'angular',
+            'aws',
+            'docker',
+            'python core',
+            'python advanced']
+    },
+    {
+        title: 'QA Complex',
+        monthDuration: 4,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
+    },
+    {
+        title: 'FullStack',
+        monthDuration: 7,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'react',
+            'angular',
+            'aws',
+            'docker',
+            'git',
+            'node.js',
+            'python',
+            'java']
+    },
+    {
+        title: 'Frontend',
+        monthDuration: 4,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
+    }
+];
+
 // Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих
 // властивостей, для властивості modules зробити список з елементами
 // Приклад структири знаходиться у файлі example.png який лежить в папці з поточним фйлом
-// ------------------
-//
+
+for (const course of coursesArray) {
+    let container=document.createElement('div');
+    let title=document.createElement('div');
+    title.innerText=`Title: ${course.title}`;
+    let duration=document.createElement('div');
+    let monthDuration=document.createElement('div');
+    monthDuration.innerText= `monthDuration: ${course.monthDuration}`;
+    let hourDuration=document.createElement('div');
+    hourDuration.innerText= `hourDuration: ${course.hourDuration}`;
+    duration.append(monthDuration, hourDuration);
+    let modules=document.createElement('div');
+
+    console.log(course);
+    let children = course.children;
+    if (children.length !== 0) {
+        for (const element of children) {
+            let modulesUl=document.createElement('ul');
+                modules.appendChild(modulesUl);
+                let modulesLi=document.createElement('li');
+                modulesUl.appendChild(modulesLi);
+                let modulesDiv=document.createElement('div');
+                modulesDiv.innerText=`${element}`;
+                modulesLi.appendChild(modulesDiv);
+        };
+
+   container.append(title, duration, modules);
+    document.body.appendChild(container);
+}}
+
 //     - Створити довільний елемент з id = text та створити кнопку.Використовуючи JavaScript, зробіть так, щоб при
 //     натисканні на кнопку зникав елемент з id="text".
 //
