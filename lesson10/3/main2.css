@@ -1,0 +1,56 @@
+.box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#people {
+    width: 60vw;
+    height: 80vh;
+    font-size: 20px;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-right: 3px solid #f1f0f0;
+    border-left: 3px solid #f1f0f0;
+
+}
+
+button {
+    align-items: center;
+    background: #FFFFFF;
+    border: 0 solid #E2E8F0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+    color: #496fb2;
+    display: inline-flex;
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 56px;
+    justify-content: center;
+    line-height: 24px;
+    overflow-wrap: break-word;
+    padding: 24px;
+    text-decoration: none;
+    width: 150px;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+
+

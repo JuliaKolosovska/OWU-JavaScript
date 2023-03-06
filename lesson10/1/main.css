@@ -1,0 +1,11 @@
+#divnum{
+    width: 200px;
+    height: 200px;
+    background: #50d9ec;
+    font-size:100px;
+    color: #055359;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    border: 10px solid #ddf3f6;
+}

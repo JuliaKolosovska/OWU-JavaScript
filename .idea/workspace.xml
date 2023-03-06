@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d07225a-2a08-405d-bede-91d3753c95c1" name="Changes" comment="" />
+    <list default="true" id="4d07225a-2a08-405d-bede-91d3753c95c1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lesson10/1/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson10/1/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson10/1/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson10/2/index1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson10/2/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson10/2/main1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson10/2/main2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson10/2/sessions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson10/3/index2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson10/3/main2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson10/3/main2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson10/4/index3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson10/4/main3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +51,12 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\IdeaProjects\OWU-JavaScript\lesson10\3" />
+      <recent name="C:\Users\Admin\IdeaProjects\OWU-JavaScript\lesson10\1" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -56,7 +77,8 @@
       <workItem from="1677504936726" duration="1065000" />
       <workItem from="1677611753363" duration="10574000" />
       <workItem from="1677670264010" duration="6361000" />
-      <workItem from="1677683674360" duration="402000" />
+      <workItem from="1677683674360" duration="636000" />
+      <workItem from="1677834070034" duration="32479000" />
     </task>
     <task id="LOCAL-00001" summary="Add files">
       <created>1675244150958</created>
@@ -212,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677683915519</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Add files">
+      <created>1677684304178</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1677684304178</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
