@@ -22,7 +22,7 @@ email.innerText = `E-mail: ${user.email}`;
 let address = document.createElement('div');
 let street = document.createElement('p');
 street.innerText = `address: ${user.address.street} ${user.address.suite}, ${user.address.zipcode} ${user.address.city} , geo: lat ${user.address.geo.lat}, lng ${user.address.geo.lng}`;
-;
+
 address.appendChild(street);
 let phone = document.createElement('p');
 phone.innerText = `Phone: ${user.phone}`;
@@ -42,19 +42,19 @@ btn.onclick = function () {
         .then(response => response.json())
         .then(postsArray => {
             for (const post of postsArray) {
-                let post = document.createElement('div');
-                post.classList.add('post');
+                let postDiv = document.createElement('div');
+                postDiv.classList.add('post');
                 let postId = document.createElement('p');
                 postId.innerText = `Post ID: ${post.id}`;
                 let title = document.createElement('h4');
                 title.innerText = `${post.title}`;
                 let postBody = document.createElement('p');
                 postBody.innerText = `${post.body}`;
-                post.append(postId, title, postBody);
+                postDiv.append(postId, title, postBody);
 
                 let posts = document.createElement('div');
                 posts.classList.add('posts');
-                posts.appendChild(post);
+                posts.appendChild(postDiv);
                 container.appendChild(posts)
             }
 
