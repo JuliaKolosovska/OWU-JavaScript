@@ -34,7 +34,7 @@ userDiv.append(h4, h5, email, address, phone, website, company);
 let container = document.getElementById('container');
 let btn = document.createElement('button');
 btn.classList.add('btn-posts');
-btn.innerText = 'posts of current user';
+btn.innerText = `Posts of current user`;
 container.append(userDiv, btn);
 
 btn.onclick = function () {
@@ -43,20 +43,27 @@ btn.onclick = function () {
         .then(postsArray => {
             for (const post of postsArray) {
                 let postDiv = document.createElement('div');
-                postDiv.classList.add('post');
-                let postId = document.createElement('p');
-                postId.innerText = `Post ID: ${post.id}`;
+                postDiv.setAttribute('id', 'post');
+
                 let title = document.createElement('h4');
                 title.innerText = `${post.title}`;
-                let postBody = document.createElement('p');
-                postBody.innerText = `${post.body}`;
-                postDiv.append(postId, title, postBody);
 
-                let posts = document.createElement('div');
-                posts.classList.add('posts');
+                let detailsBtn = document.createElement('button');
+                detailsBtn.innerText = 'Details';
+                let a = document.createElement('a');
+
+                a.href = 'post-details.html?data=' + JSON.stringify(post);
+                a.appendChild(detailsBtn);
+                postDiv.append(title, a);
+
+                let posts = document.getElementById('posts');
                 posts.appendChild(postDiv);
-                container.appendChild(posts)
+                container.appendChild(posts);
+
             }
 
         })
+    btn.style.visibility = 'hidden';
 }
+
+

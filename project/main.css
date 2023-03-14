@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+
+#container {
+    width: 60%;
+    height: 100vh;
+    margin-left: 20%;
+    border: 1px solid silver;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.user{
+    width: 45%;
+    height: 150px;
+    border: 1px solid silver;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+
+}
+
+h4{
+    font-size: 30px;
+    margin: 0;
+
+}
+a, a:hover, a:focus, a:active{
+    font-size: 20px;
+    font-style: italic;
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
