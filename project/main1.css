@@ -1,49 +1,116 @@
 body {
     margin: 0;
+    background-color: rgba(39, 35, 72, 0.82);
+
 }
 
 #container {
     width: 60%;
     height: 100vh;
     margin-left: 20%;
-    border: 1px solid silver;
+    border-right: 0.1px solid #b505f1;
+    border-left: 0.1px solid #b505f1;
+    background: #20203d;
+    box-shadow: 0 4px 8px 0 #fbb7ff, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: start;
 }
 
-.user-details{
+.user-details {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    color: #fadffc;
 }
-.btn-posts{
+
+#btn-posts {
     width: 90%;
     height: 50px;
     font-size: 20px;
     font-style: italic;
     cursor: pointer;
 }
-
-#posts{
+#btn-posts{
+    color: #fff;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0.25em, transparent 0.25em) center/1em 1.2em;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border-radius: 20px/50px;
+    border: 2px solid #e7bef8;
+    transition: all 0.5s ease 0s;
+}
+#btn-posts:hover,
+#btn-posts:focus{
+    color: #113341;
+    background: radial-gradient(circle, #e7bef8 0.25em, transparent 0.25em) center/0.1em 0.1em;
+    box-shadow: 4px 4px rgba(253,238,172,0.2);
+}
+@media only screen and (max-width: 767px){
+    #btn-posts{ margin-bottom: 20px; }
+}
+#posts {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-#post{
-       display: flex;
-   flex-direction: column;
+#post {
+    color: #fadffc;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid silver;
+    text-align: center;
     width: 17%;
     margin-left: 0.5%;
     margin-right: 0.5%;
     margin-bottom: 20px;
     padding: 3px;
+    border-radius: 25px;
+    border: 0.1px solid #b505f1;
+    background-color: rgb(61, 61, 117);
+    box-shadow: 0 4px 8px 0 #f872fc, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#details{
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding-bottom: 15px;
+    position: relative;
+    background-image: linear-gradient(to top, #262626 0px, #404040 10px, #262626 10px, #333 100%);
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+#details:hover{
+    color: #fff;
+}
+#details:after{
+    content: "";
+    width: 0;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 0 5px 5px;
+    transition: all 0.35s ease 0s;
+}
+#details:hover:after{
+    width: 100%;
+}
+#details{
+    padding-bottom: 10px;
+    background-image: linear-gradient(to top, #262626 0px, #404040 2px, #262626 2px, #333 100%);
+}
+#details:after{
+    height: 2px;
+    background: #efcafc;
 }

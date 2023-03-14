@@ -7,7 +7,10 @@ fetch('https://jsonplaceholder.typicode.com/users')
             let h4=document.createElement('h4');
             h4.innerText=`${user.id}. ${user.name}`
             let a = document.createElement('a');
-            a.innerText = 'D e t a i l s';
+            let btn = document.createElement('button');
+            btn.innerText = 'D e t a i l s';
+            btn.setAttribute('id', 'details')
+            a.appendChild(btn);
             a.href = 'user-details.html?data=' + JSON.stringify(user);
             userDiv.append(h4, a);
             let container = document.getElementById('container');

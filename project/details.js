@@ -13,10 +13,10 @@ let user = JSON.parse(jsn);
 let userDiv = document.createElement('div');
 userDiv.classList.add('user-details');
 
-let h4 = document.createElement('h4');
-h4.innerText = `${user.id}. ${user.name}`;
-let h5 = document.createElement('h5');
-h5.innerText = `Username: ${user.username}`;
+let h1 = document.createElement('h1');
+h1.innerText = `${user.id}. ${user.name}`;
+let h2 = document.createElement('h2');
+h2.innerText = `Username: ${user.username}`;
 let email = document.createElement('p');
 email.innerText = `E-mail: ${user.email}`;
 let address = document.createElement('div');
@@ -30,10 +30,10 @@ let website = document.createElement('p');
 website.innerText = `Website: ${user.website}`;
 let company = document.createElement('p');
 company.innerText = `Company: ${user.company.name}, catch phrase: ${user.company.catchPhrase}, bs: ${user.company.bs}`;
-userDiv.append(h4, h5, email, address, phone, website, company);
+userDiv.append(h1, h2, email, address, phone, website, company);
 let container = document.getElementById('container');
 let btn = document.createElement('button');
-btn.classList.add('btn-posts');
+btn.setAttribute('id', 'btn-posts');
 btn.innerText = `Posts of current user`;
 container.append(userDiv, btn);
 
@@ -50,6 +50,7 @@ btn.onclick = function () {
 
                 let detailsBtn = document.createElement('button');
                 detailsBtn.innerText = 'Details';
+                detailsBtn.setAttribute('id', 'details');
                 let a = document.createElement('a');
 
                 a.href = 'post-details.html?data=' + JSON.stringify(post);
@@ -63,7 +64,8 @@ btn.onclick = function () {
             }
 
         })
-    btn.style.visibility = 'hidden';
+
+    btn.disabled=true;
 }
 
 

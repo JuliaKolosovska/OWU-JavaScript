@@ -1,12 +1,16 @@
 body {
     margin: 0;
+    background-color: rgba(39, 35, 72, 0.82);
 }
 
 #container {
     width: 60%;
     height: 100vh;
     margin-left: 20%;
-    border: 1px solid silver;
+    border-right: 0.1px solid #b505f1;
+    border-left: 0.1px solid #b505f1;
+    background: #20203d;
+    box-shadow: 0 4px 8px 0 #fbb7ff, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -15,7 +19,11 @@ body {
 .user{
     width: 45%;
     height: 150px;
-    border: 1px solid silver;
+    color: #fadffc;
+    border-radius: 25px;
+    border: 0.1px solid #b505f1;
+    background-color: rgb(61, 61, 117);
+    box-shadow: 0 4px 8px 0 #f872fc, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,11 +37,39 @@ h4{
     margin: 0;
 
 }
-a, a:hover, a:focus, a:active{
-    font-size: 20px;
-    font-style: italic;
-    text-decoration: none;
-    cursor: pointer;
-    color: inherit;
+
+#details{
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding-bottom: 15px;
+    position: relative;
+    background-image: linear-gradient(to top, #262626 0px, #404040 10px, #262626 10px, #333 100%);
+    margin-top: 30px;
+
+}
+#details:hover{
+    color: #fff;
+}
+#details:after{
+    content: "";
+    width: 0;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 0 5px 5px;
+    transition: all 0.35s ease 0s;
+}
+#details:hover:after{
+    width: 100%;
+}
+#details{
+    padding-bottom: 10px;
+    background-image: linear-gradient(to top, #262626 0px, #404040 2px, #262626 2px, #333 100%);
+}
+#details:after{
+    height: 2px;
+    background: #efcafc;
 }
 
