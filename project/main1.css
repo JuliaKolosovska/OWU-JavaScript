@@ -1,12 +1,18 @@
+html {
+    height: 100%;
+
+}
+
 body {
     margin: 0;
     background-color: rgba(39, 35, 72, 0.82);
+    height: 100%;
 
 }
 
 #container {
     width: 60%;
-    height: 100vh;
+    min-height: 100%;
     margin-left: 20%;
     border-right: 0.1px solid #b505f1;
     border-left: 0.1px solid #b505f1;
@@ -34,7 +40,8 @@ body {
     font-style: italic;
     cursor: pointer;
 }
-#btn-posts{
+
+#btn-posts {
     color: #fff;
     background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0.25em, transparent 0.25em) center/1em 1.2em;
     font-family: 'Nunito', sans-serif;
@@ -46,15 +53,20 @@ body {
     border: 2px solid #e7bef8;
     transition: all 0.5s ease 0s;
 }
+
 #btn-posts:hover,
-#btn-posts:focus{
+#btn-posts:focus {
     color: #113341;
     background: radial-gradient(circle, #e7bef8 0.25em, transparent 0.25em) center/0.1em 0.1em;
-    box-shadow: 4px 4px rgba(253,238,172,0.2);
+    box-shadow: 4px 4px rgba(253, 238, 172, 0.2);
 }
-@media only screen and (max-width: 767px){
-    #btn-posts{ margin-bottom: 20px; }
+
+@media only screen and (max-width: 767px) {
+    #btn-posts {
+        margin-bottom: 20px;
+    }
 }
+
 #posts {
     width: 100%;
     display: flex;
@@ -80,7 +92,7 @@ body {
     box-shadow: 0 4px 8px 0 #f872fc, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#details{
+#details {
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -90,10 +102,12 @@ body {
     margin-bottom: 8px;
     cursor: pointer;
 }
-#details:hover{
+
+#details:hover {
     color: #fff;
 }
-#details:after{
+
+#details:after {
     content: "";
     width: 0;
     height: 10px;
@@ -103,14 +117,17 @@ body {
     border-radius: 0 0 5px 5px;
     transition: all 0.35s ease 0s;
 }
-#details:hover:after{
+
+#details:hover:after {
     width: 100%;
 }
-#details{
+
+#details {
     padding-bottom: 10px;
     background-image: linear-gradient(to top, #262626 0px, #404040 2px, #262626 2px, #333 100%);
 }
-#details:after{
+
+#details:after {
     height: 2px;
     background: #efcafc;
 }

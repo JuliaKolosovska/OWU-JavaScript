@@ -1,11 +1,18 @@
+html {
+    height: 100%;
+
+}
+
 body {
     margin: 0;
     background-color: rgba(39, 35, 72, 0.82);
+    height: 100%;
+
 }
 
 #container {
     width: 60%;
-    height: 100vh;
+    min-height: 100%;
     margin-left: 20%;
     border-right: 0.1px solid #b505f1;
     border-left: 0.1px solid #b505f1;
@@ -16,7 +23,8 @@ body {
     justify-content: space-evenly;
     align-items: center;
 }
-.user{
+
+.user {
     width: 45%;
     height: 150px;
     color: #fadffc;
@@ -32,13 +40,13 @@ body {
 
 }
 
-h4{
+h4 {
     font-size: 30px;
     margin: 0;
 
 }
 
-#details{
+#details {
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -46,12 +54,15 @@ h4{
     position: relative;
     background-image: linear-gradient(to top, #262626 0px, #404040 10px, #262626 10px, #333 100%);
     margin-top: 30px;
+    cursor: pointer;
 
 }
-#details:hover{
+
+#details:hover {
     color: #fff;
 }
-#details:after{
+
+#details:after {
     content: "";
     width: 0;
     height: 10px;
@@ -61,14 +72,17 @@ h4{
     border-radius: 0 0 5px 5px;
     transition: all 0.35s ease 0s;
 }
-#details:hover:after{
+
+#details:hover:after {
     width: 100%;
 }
-#details{
+
+#details {
     padding-bottom: 10px;
     background-image: linear-gradient(to top, #262626 0px, #404040 2px, #262626 2px, #333 100%);
 }
-#details:after{
+
+#details:after {
     height: 2px;
     background: #efcafc;
 }

@@ -65,7 +65,7 @@ btn.onclick = function () {
 
         })
 
-    btn.disabled=true;
+    btn.disabled = true;
 }
 
 

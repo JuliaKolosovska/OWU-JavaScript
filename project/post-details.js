@@ -18,8 +18,7 @@ let commentsHeader = document.createElement('div');
 commentsHeader.innerText = 'Comments';
 commentsHeader.setAttribute('id', 'header')
 commentsDiv.setAttribute('id', 'comments');
-commentsDiv.append(commentsHeader);
-container.append(postDiv, commentsDiv);
+container.append(postDiv, commentsHeader, commentsDiv);
 
 fetch(`https://jsonplaceholder.typicode.com/posts/${post.id}/comments`)
     .then(response => response.json())

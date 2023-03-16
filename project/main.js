@@ -4,8 +4,8 @@ fetch('https://jsonplaceholder.typicode.com/users')
         for (const user of usersArray) {
             let userDiv = document.createElement('div');
             userDiv.classList.add('user');
-            let h4=document.createElement('h4');
-            h4.innerText=`${user.id}. ${user.name}`
+            let h4 = document.createElement('h4');
+            h4.innerText = `${user.id}. ${user.name}`
             let a = document.createElement('a');
             let btn = document.createElement('button');
             btn.innerText = 'D e t a i l s';

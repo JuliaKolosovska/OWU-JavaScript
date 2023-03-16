@@ -4,11 +4,11 @@
     <list default="true" id="4d07225a-2a08-405d-bede-91d3753c95c1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/main1.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/main1.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/main2.css" beforeDir="false" afterPath="$PROJECT_DIR$/project/main2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/post-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/project/post-details.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,8 @@
       <workItem from="1677834070034" duration="32539000" />
       <workItem from="1678112029874" duration="684000" />
       <workItem from="1678649345737" duration="1686000" />
-      <workItem from="1678651171038" duration="18857000" />
+      <workItem from="1678651171038" duration="20227000" />
+      <workItem from="1678963660861" duration="2767000" />
     </task>
     <task id="LOCAL-00001" summary="Add files">
       <created>1675244150958</created>
@@ -265,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678794475592</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Add files">
+      <created>1678808169978</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1678808169978</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
